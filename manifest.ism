@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SmoothStreamingMedia
+  MajorVersion="2"
+  MinorVersion="2"
+  TimeScale="10000000"
+  Duration="86419200000">
+    <StreamIndex
+    Type="audio"
+    QualityLevels="2"
+    TimeScale="10000000"
+    Language="deu"
+    Name="audio_deu"
+    Chunks="4"
+    Url="QualityLevels({bitrate})/Fragments(audio_deu={start time})">
+        <QualityLevel
+      Index="0"
+      Bitrate="62009"
+      CodecPrivateData="1190"
+      SamplingRate="48000"
+      Channels="2"
+      BitsPerSample="16"
+      PacketSize="4"
+      AudioTag="255"
+      FourCC="AACL" />
+        <c t="0" d="10000000" />
+        <c d="10000000" />
+        <c d="10000000" />
+        <c d="10000000" />
+    </StreamIndex>
+    <StreamIndex
+    Type="video"
+    QualityLevels="7"
+    TimeScale="10000000"
+    Name="video"
+    Chunks="4"
+    Url="QualityLevels({bitrate})/Fragments(video={start time})"
+    MaxWidth="1280"
+    MaxHeight="720"
+    DisplayWidth="1280"
+    DisplayHeight="720">
+        <QualityLevel
+      Index="0"
+      Bitrate="284000"
+      CodecPrivateData="00000001674D401FB90A0F047F5808800000030080000019724002328011977BDC07C22114580000000168F92BC8"
+      MaxWidth="480"
+      MaxHeight="270"
+      FourCC="AVC1" />
+        <QualityLevel
+      Index="1"
+      Bitrate="475000"
+      CodecPrivateData="00000001674D401FB90A05017FCB80880000030008000003019724003A9801D4F7BDC07C221145800000000168F92BC8"
+      MaxWidth="640"
+      MaxHeight="360"
+      FourCC="AVC1" />
+        <c t="0" d="10000000" />
+        <c d="10000000" />
+        <c d="10000000" />
+        <c d="10000000" />
+    </StreamIndex>
+</SmoothStreamingMedia>

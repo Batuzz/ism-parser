@@ -1,3 +1,4 @@
 node_modules
 .idea
 output.json
+.nyc_output

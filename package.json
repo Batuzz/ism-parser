@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "debug": "node --inspect=9229 test/output",
-    "test": "nyc mocha test/unit --recursive"
+    "test": "nyc mocha test/unit --recursive",
+    "test:nonyc": "mocha test/unit --recursive"
   },
   "repository": {
     "type": "git",

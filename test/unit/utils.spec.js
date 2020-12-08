@@ -43,7 +43,7 @@ describe('utils', () => {
     });
 
     it('should return empty string when no slashes are found in url', () => {
-      const result = getSegmentsRootUrl('test')
+      const result = getSegmentsRootUrl('test');
       expect(result).to.eql('');
     });
 

@@ -1,6 +1,6 @@
 {
   "name": "ism-parser",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Library for parsing ISM manifest file",
   "main": "index.js",
   "scripts": {

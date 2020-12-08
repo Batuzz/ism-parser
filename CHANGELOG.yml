@@ -1,5 +1,10 @@
 changelog:
   - type: added
+    message: added possibility to pass different digest function
+    version: 0.3.0
+    date: "08-12-2020"
+
+  - type: added
     message: added test assets from playready.directtaps.net/smoothstreaming/
     version: 0.2.0
 

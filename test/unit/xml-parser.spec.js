@@ -1,6 +1,6 @@
 'use strict';
 
-const { parseXML } = require('../../lib/xml-parser');
+const { XMLParser } = require('../../lib/xml-parser');
 const { expect } = require('chai');
 const { readFileSync } = require('fs');
 const { join } = require('path');
@@ -16,13 +16,13 @@ describe('XML parser', () => {
   };
 
   it('should parse example xml', () => {
-    const result = parseXML(xmlValue);
+    const result = XMLParser(xmlValue);
     expect(result).to.eql(expectedJSON);
   });
 
   it('should throw when non-xml was provided', () => {
     try {
-      parseXML('non-xml');
+      XMLParser('non-xml');
       expect.fail('Should throw an error');
     } catch (e) {
       expect(e.message).to.eql('Non XML value was provided')

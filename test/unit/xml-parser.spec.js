@@ -5,7 +5,7 @@ const { expect } = require('chai');
 const { readFileSync } = require('fs');
 const { join } = require('path');
 
-describe.only('XML parser', () => {
+describe('XML parser', () => {
 
   const xmlValue = readFileSync(join(__dirname, '../fixtures/test.xml')).toString();
   const expectedJSON = {
@@ -27,6 +27,5 @@ describe.only('XML parser', () => {
     } catch (e) {
       expect(e.message).to.eql('Non XML value was provided')
     }
-
   });
 });
